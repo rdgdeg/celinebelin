@@ -37,9 +37,9 @@ export default function HeroSection() {
       }}
     >
       <div className="max-w-[1200px] mx-auto px-6 h-full flex items-center pt-[72px]">
-        <div className="grid lg:grid-cols-[55%_45%] gap-12 items-center w-full py-16 lg:py-0">
-          {/* Left: Text */}
-          <div className="order-2 lg:order-1">
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,max-content)_auto] gap-8 lg:gap-6 xl:gap-10 items-center w-full py-16 lg:py-0 lg:justify-items-start">
+          {/* Left: Text — largeur au contenu pour éviter un vide entre texte et photo */}
+          <div className="order-2 lg:order-1 w-full max-w-[560px] lg:max-w-[min(36rem,100%)] lg:w-max">
             <span
               ref={labelRef}
               className="inline-block px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-[0.1em] bg-forest/10 text-forest-dark mb-4 opacity-0 translate-y-5"
@@ -56,7 +56,7 @@ export default function HeroSection() {
               <span className="text-forest">ma mission</span>
             </h1>
 
-            <div ref={introRef} className="space-y-3 mb-8 max-w-[520px] opacity-0 translate-y-8">
+            <div ref={introRef} className="space-y-3 mb-8 max-w-[540px] opacity-0 translate-y-8">
               <p className="text-base text-warm-text-secondary leading-relaxed">
                 Psychologue agréée à Silly, Mons, Péruwelz &amp; Bernissart. J'accompagne
                 adolescents et adultes vers un mieux-être durable à travers une approche
@@ -106,13 +106,13 @@ export default function HeroSection() {
           {/* Right: Image */}
           <div
             ref={imageRef}
-            className="order-1 lg:order-2 flex justify-center lg:justify-end opacity-0 scale-95"
+            className="order-1 lg:order-2 flex justify-center lg:justify-start opacity-0 scale-95 lg:shrink-0"
           >
-            <div className="relative">
+            <div className="relative w-full max-w-[420px] lg:max-w-[380px] xl:max-w-[420px]">
               <img
                 src="/images/hero.jpg"
                 alt="Céline Belin - Psychologue"
-                className="rounded-2xl w-full max-w-[420px] lg:max-w-[480px] object-cover shadow-[0_24px_56px_rgba(27,67,50,0.18)] ring-1 ring-forest/10"
+                className="rounded-2xl w-full object-cover shadow-[0_24px_56px_rgba(27,67,50,0.18)] ring-1 ring-forest/10"
                 loading="eager"
               />
             </div>
