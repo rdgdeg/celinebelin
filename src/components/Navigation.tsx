@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Accueil", href: "#accueil" },
-  { label: "\u00c0 propos", href: "#a-propos" },
+  { label: "À propos", href: "#a-propos" },
   { label: "Services", href: "#services" },
   { label: "Motifs", href: "#motifs" },
   { label: "Animaux", href: "#animaux" },
@@ -43,7 +43,7 @@ export default function Navigation() {
           onClick={(e) => handleClick(e, "#accueil")}
           className="font-display text-xl font-semibold text-warm-text"
         >
-          C\u00e9line Belin
+          Céline Belin
         </a>
 
         {/* Desktop nav */}

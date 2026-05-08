@@ -7,37 +7,37 @@ const motifs = [
     icon: User,
     title: "Connaissance de soi",
     description:
-      "Se d\u00e9couvrir, comprendre ses aspirations, ses forces et ses faiblesses \u00e0 l'adolescence ou \u00e0 l'\u00e2ge adulte.",
+      "Se découvrir, comprendre ses aspirations, ses forces et ses faiblesses à l'adolescence ou à l'âge adulte.",
   },
   {
     icon: Zap,
-    title: "Stress & Anxi\u00e9t\u00e9",
+    title: "Stress & Anxiété",
     description:
-      "Le stress est une r\u00e9action physiologique aux situations per\u00e7ues comme dangereuses. Apprenez \u00e0 le g\u00e9rer efficacement.",
+      "Le stress est une réaction physiologique aux situations perçues comme dangereuses. Apprenez à le gérer efficacement.",
   },
   {
     icon: Flame,
     title: "Burn-out",
     description:
-      "\u00c9puisement professionnel ou familial se manifestant par fatigue, difficult\u00e9s de concentration et perturbations du sommeil.",
+      "Épuisement professionnel ou familial se manifestant par fatigue, difficultés de concentration et perturbations du sommeil.",
   },
   {
     icon: CloudRain,
-    title: "D\u00e9pression",
+    title: "Dépression",
     description:
-      "Perte de plaisir, d\u00e9motivation, perte de sens et sentiment de d\u00e9sespoir apr\u00e8s un \u00e9v\u00e9nement difficile.",
+      "Perte de plaisir, démotivation, perte de sens et sentiment de désespoir après un événement difficile.",
   },
   {
     icon: AlertTriangle,
     title: "Phobies",
     description:
-      "Peurs irrationnelles des chiens, araign\u00e9es, serpents, piq\u00fbres... Traitement par hypnose, EMDR et TCC.",
+      "Peurs irrationnelles des chiens, araignées, serpents, piqûres... Traitement par hypnose, EMDR et TCC.",
   },
   {
     icon: Heart,
-    title: "Deuil & S\u00e9paration",
+    title: "Deuil & Séparation",
     description:
-      "Accompagnement dans le processus de deuil, la perte d'un proche ou la s\u00e9paration affective.",
+      "Accompagnement dans le processus de deuil, la perte d'un proche ou la séparation affective.",
   },
 ];
 

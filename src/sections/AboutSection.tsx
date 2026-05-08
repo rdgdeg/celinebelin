@@ -3,8 +3,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
 
 const certifications = [
-  { icon: Award, text: "Psychologue agr\u00e9e" },
-  { icon: Brain, text: "TCC & Th\u00e9rapie ACT" },
+  { icon: Award, text: "Psychologue agréée" },
+  { icon: Brain, text: "TCC & Thérapie ACT" },
   { icon: Sparkles, text: "Hypnose Ericksonienne" },
   { icon: Eye, text: "EMDR" },
   { icon: Flower2, text: "Fleurs de Bach" },
@@ -22,7 +22,7 @@ export default function AboutSection() {
               <div className="absolute -top-5 -left-5 w-20 h-20 rounded-full bg-forest/15 -z-10" />
               <img
                 src="/images/about.jpg"
-                alt="C\u00e9line Belin en consultation"
+                alt="Céline Belin en consultation"
                 className="rounded-2xl w-full object-cover shadow-lg"
                 loading="lazy"
               />
@@ -33,34 +33,34 @@ export default function AboutSection() {
           <div>
             <ScrollReveal>
               <SectionHeader
-                label="\u00c0 propos de moi"
-                title="C\u00e9line Belin"
+                label="À propos de moi"
+                title="Céline Belin"
                 align="left"
               />
             </ScrollReveal>
 
             <ScrollReveal delay={0.1}>
               <p className="text-warm-text-secondary leading-relaxed mb-4">
-                Psychologue agr\u00e9e par la Commission des Psychologues, dipl\u00f4m\u00e9e d'un
-                master en sciences psychologiques et neuropsychologiques de l'Universit\u00e9 de
-                Trois-Rivi\u00e8res (Qu\u00e9bec) et de l'Universit\u00e9 de Mons.
+                Psychologue agréée par la Commission des Psychologues, diplômée d'un
+                master en sciences psychologiques et neuropsychologiques de l'Université de
+                Trois-Rivières (Québec) et de l'Université de Mons.
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
               <p className="text-warm-text-secondary leading-relaxed mb-4">
-                Je me suis form\u00e9e en psychoth\u00e9rapie via un certificat de 3 ans \u00e0
-                l'UCLouvain en psychoth\u00e9rapie int\u00e9grative (orientation TCC). Curieuse de
-                nature, j'ai enrichi ma bo\u00eete \u00e0 outils avec de nombreuses formations
-                compl\u00e9mentaires.
+                Je me suis formée en psychothérapie via un certificat de 3 ans à
+                l'UCLouvain en psychothérapie intégrative (orientation TCC). Curieuse de
+                nature, j'ai enrichi ma boîte à outils avec de nombreuses formations
+                complémentaires.
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={0.3}>
               <p className="text-warm-text-secondary leading-relaxed mb-8">
                 Je propose des consultations <strong>en cabinet</strong>, en{" "}
-                <strong>visioconf\u00e9rence</strong> et en{" "}
-                <strong>walking therapy</strong> (s\u00e9ances en ext\u00e9rieur \u00e0 la for\u00eat
+                <strong>visioconférence</strong> et en{" "}
+                <strong>walking therapy</strong> (séances en extérieur à la forêt
                 de Bonsecours, Stambruges ou le long du canal).
               </p>
             </ScrollReveal>

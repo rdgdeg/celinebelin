@@ -5,12 +5,12 @@ import SectionHeader from "@/components/SectionHeader";
 const plans = [
   {
     title: "Consultation",
-    price: "65\u20ac",
+    price: "65€",
     accent: "forest",
     features: [
-      "Dur\u00e9e: 50-60 minutes",
-      "En cabinet ou visioconf\u00e9rence",
-      "Silly, Mons, P\u00e9ruwelz, Bernissart",
+      "Durée: 50-60 minutes",
+      "En cabinet ou visioconférence",
+      "Silly, Mons, Péruwelz, Bernissart",
       "Remboursement mutuelle possible",
     ],
     cta: "Prendre RDV",
@@ -19,13 +19,13 @@ const plans = [
   },
   {
     title: "Coaching de Vie",
-    price: "60\u20ac",
+    price: "60€",
     accent: "forest",
     features: [
-      "Dur\u00e9e: 50-60 minutes",
+      "Durée: 50-60 minutes",
       "Love coaching, Job coaching",
       "Objectifs personnels & professionnels",
-      "En cabinet ou visioconf\u00e9rence",
+      "En cabinet ou visioconférence",
     ],
     cta: "Prendre RDV",
     href: "https://www.doctena.be/fr/specialite/psychologue/celine-belin-1886103",
@@ -33,12 +33,12 @@ const plans = [
   },
   {
     title: "Soins Animaux",
-    price: "45\u20ac",
+    price: "45€",
     accent: "sage",
     features: [
-      "Reiki, Lahochi, Kin\u00e9siologie",
+      "Reiki, Lahochi, Kinésiologie",
       "Fleurs de Bach",
-      "En pr\u00e9sentiel ou \u00e0 distance",
+      "En présentiel ou à distance",
       "Sur photo et nom de l'animal",
     ],
     cta: "En savoir plus",
@@ -55,7 +55,7 @@ export default function TarifsSection() {
           <SectionHeader
             label="Tarifs"
             title="Mes honoraires"
-            subtitle="Des tarifs transparents adapt\u00e9s \u00e0 chaque accompagnement"
+            subtitle="Des tarifs transparents adaptés à chaque accompagnement"
           />
         </ScrollReveal>
 
@@ -87,7 +87,7 @@ export default function TarifsSection() {
                   >
                     {plan.price}
                   </span>
-                  <span className="text-warm-text-secondary text-sm"> / s\u00e9ance</span>
+                  <span className="text-warm-text-secondary text-sm"> / séance</span>
                 </div>
 
                 <ul className="flex flex-col gap-3 mb-8 flex-1">

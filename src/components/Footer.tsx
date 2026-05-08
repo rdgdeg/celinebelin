@@ -1,6 +1,6 @@
 const navLinks = [
   { label: "Accueil", href: "#accueil" },
-  { label: "\u00c0 propos", href: "#a-propos" },
+  { label: "À propos", href: "#a-propos" },
   { label: "Services", href: "#services" },
   { label: "Animaux", href: "#animaux" },
   { label: "Tarifs", href: "#tarifs" },
@@ -30,13 +30,13 @@ export default function Footer() {
           {/* Column 1: Logo */}
           <div>
             <h3 className="font-display text-xl font-semibold text-white mb-1">
-              C\u00e9line Belin
+              Céline Belin
             </h3>
             <p className="text-sm text-warm-text-light mb-3">
-              Psychologue &amp; Bien-\u00catre
+              Psychologue &amp; Bien-Être
             </p>
             <p className="text-sm text-white/50 leading-relaxed">
-              Accompagnement bienveillant vers votre mieux-\u00eatre.
+              Accompagnement bienveillant vers votre mieux-être.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function Footer() {
               <li className="text-sm text-white/60">0479/46.24.29</li>
               <li className="text-sm text-white/60">celine.belin@gmail.com</li>
               <li className="text-sm text-white/60">
-                Silly, Mons, P\u00e9ruwelz, Bernissart
+                Silly, Mons, Péruwelz, Bernissart
               </li>
             </ul>
           </div>
@@ -92,11 +92,11 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 text-center">
           <p className="text-[13px] text-white/40">
-            &copy; 2026 C\u00e9line Belin &mdash; Psychologue &amp; Bien-\u00catre. Tous
-            droits r\u00e9serv\u00e9s.
+            &copy; 2026 Céline Belin &mdash; Psychologue &amp; Bien-Être. Tous
+            droits réservés.
           </p>
           <p className="text-xs text-white/30 mt-1">
-            Agr\u00e9\u00e9e par la Commission des Psychologues
+            Agréée par la Commission des Psychologues
           </p>
         </div>
       </div>

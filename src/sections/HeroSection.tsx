@@ -24,7 +24,7 @@ export default function HeroSection() {
     return () => { tl.kill(); };
   }, []);
 
-  const cities = ["Silly", "Mons", "P\u00e9ruwelz", "Bernissart"];
+  const cities = ["Silly", "Mons", "Péruwelz", "Bernissart"];
 
   return (
     <section
@@ -44,38 +44,38 @@ export default function HeroSection() {
               ref={labelRef}
               className="inline-block px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-[0.1em] bg-forest/10 text-forest-dark mb-4 opacity-0 translate-y-5"
             >
-              Psychologue agr\u00e9e \u00b7 Coach de vie
+              Psychologue agréée · Coach de vie
             </span>
 
             <h1
               ref={titleRef}
               className="font-display text-4xl md:text-5xl lg:text-[56px] font-bold leading-[1.1] text-warm-text mb-5 opacity-0 translate-y-8"
             >
-              Votre bien-\u00eatre,
+              Votre bien-être,
               <br />
               <span className="text-forest">ma mission</span>
             </h1>
 
             <div ref={introRef} className="space-y-3 mb-8 max-w-[520px] opacity-0 translate-y-8">
               <p className="text-base text-warm-text-secondary leading-relaxed">
-                Psychologue agr\u00e9e \u00e0 Silly, Mons, P\u00e9ruwelz &amp; Bernissart. J'accompagne
-                adolescents et adultes vers un mieux-\u00eatre durable \u00e0 travers une approche
-                personnalis\u00e9e et bienveillante.
+                Psychologue agréée à Silly, Mons, Péruwelz &amp; Bernissart. J'accompagne
+                adolescents et adultes vers un mieux-être durable à travers une approche
+                personnalisée et bienveillante.
               </p>
               <p className="text-sm text-warm-text-secondary flex flex-wrap items-center gap-x-2 gap-y-1">
-                <span className="font-medium text-forest">Psychoth\u00e9rapie</span>
+                <span className="font-medium text-forest">Psychothérapie</span>
                 <span className="text-warm-border" aria-hidden>
-                  \u00b7
+                  ·
                 </span>
                 <span className="font-medium text-forest">Hypnose &amp; EMDR</span>
                 <span className="text-warm-border" aria-hidden>
-                  \u00b7
+                  ·
                 </span>
                 <span className="font-medium text-forest">Coaching</span>
                 <span className="text-warm-border" aria-hidden>
-                  \u00b7
+                  ·
                 </span>
-                <span className="font-medium text-sage">Soins \u00e9nerg\u00e9tiques animaux</span>
+                <span className="font-medium text-sage">Soins énergétiques animaux</span>
               </p>
             </div>
             <div ref={ctaRef} className="flex flex-wrap gap-4 mb-12 opacity-0 translate-y-5">
@@ -87,7 +87,7 @@ export default function HeroSection() {
                 Prendre rendez-vous
               </Button>
               <Button variant="secondary" href="#services">
-                D\u00e9couvrir mes services
+                Découvrir mes services
               </Button>
             </div>
 
@@ -111,7 +111,7 @@ export default function HeroSection() {
             <div className="relative">
               <img
                 src="/images/hero.jpg"
-                alt="C\u00e9line Belin - Psychologue"
+                alt="Céline Belin - Psychologue"
                 className="rounded-2xl w-full max-w-[420px] lg:max-w-[480px] object-cover shadow-[0_24px_56px_rgba(27,67,50,0.18)] ring-1 ring-forest/10"
                 loading="eager"
               />

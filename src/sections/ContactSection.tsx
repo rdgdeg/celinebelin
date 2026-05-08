@@ -77,7 +77,7 @@ export default function ContactSection() {
                   type="submit"
                   className="self-start inline-flex items-center px-8 py-3.5 bg-forest text-white text-sm font-semibold rounded-full hover:bg-forest-light hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(45,106,79,0.28)] active:bg-forest-dark active:translate-y-0 transition-all duration-300"
                 >
-                  {submitted ? "Message envoy\u00e9 !" : "Envoyer mon message"}
+                  {submitted ? "Message envoyé !" : "Envoyer mon message"}
                 </button>
               </form>
             </ScrollReveal>
@@ -127,7 +127,7 @@ export default function ContactSection() {
                   <div>
                     <p className="font-semibold text-warm-text">Autres villes</p>
                     <p className="text-sm text-warm-text-secondary">
-                      Mons \u00b7 P\u00e9ruwelz \u00b7 Bernissart
+                      Mons · Péruwelz · Bernissart
                     </p>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function ContactSection() {
                       rel="noopener noreferrer"
                       className="font-semibold text-warm-text hover:text-forest transition-colors"
                     >
-                      C\u00e9line Belin Psychologue
+                      Céline Belin Psychologue
                     </a>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ export default function ContactSection() {
         <ScrollReveal delay={0.3}>
           <div className="mt-16 bg-gradient-to-r from-forest-dark to-forest rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_12px_40px_rgba(27,67,50,0.25)]">
             <p className="font-display text-xl md:text-2xl text-white text-center md:text-left">
-              Pr\u00eat \u00e0 commencer votre parcours ?
+              Prêt à commencer votre parcours ?
             </p>
             <a
               href="https://www.doctena.be/fr/specialite/psychologue/celine-belin-1886103"
@@ -164,7 +164,7 @@ export default function ContactSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 border-2 border-white text-white text-sm font-semibold rounded-full hover:bg-white hover:text-forest-dark transition-all duration-300 whitespace-nowrap"
             >
-              R\u00e9server sur Doctena
+              Réserver sur Doctena
             </a>
           </div>
         </ScrollReveal>

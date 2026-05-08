@@ -5,39 +5,39 @@ import SectionHeader from "@/components/SectionHeader";
 const services = [
   {
     icon: Brain,
-    title: "TCC & Th\u00e9rapie ACT",
+    title: "TCC & Thérapie ACT",
     description:
-      "Th\u00e9rapie Cognitive et Comportementale et Th\u00e9rapie d'Acceptation et d'Engagement pour transformer vos pens\u00e9es et comportements.",
+      "Thérapie Cognitive et Comportementale et Thérapie d'Acceptation et d'Engagement pour transformer vos pensées et comportements.",
   },
   {
     icon: Sparkles,
     title: "Hypnose & Imagerie Mentale",
     description:
-      "Acc\u00e9dez \u00e0 vos ressources inconscientes pour surmonter blocages, phobies et anxi\u00e9t\u00e9s en toute s\u00e9curit\u00e9.",
+      "Accédez à vos ressources inconscientes pour surmonter blocages, phobies et anxiétés en toute sécurité.",
   },
   {
     icon: Eye,
     title: "EMDR",
     description:
-      "D\u00e9sensibilisation par mouvements oculaires pour traiter les traumatismes, stress post-traumatique et angoisses.",
+      "Désensibilisation par mouvements oculaires pour traiter les traumatismes, stress post-traumatique et angoisses.",
   },
   {
     icon: Flower2,
     title: "Fleurs de Bach",
     description:
-      "Conseil en \u00e9lixirs floraux pour r\u00e9tablir l'\u00e9quilibre \u00e9motionnel de mani\u00e8re naturelle et douce.",
+      "Conseil en élixirs floraux pour rétablir l'équilibre émotionnel de manière naturelle et douce.",
   },
   {
     icon: Target,
     title: "Coaching de Vie",
     description:
-      "Love coaching, job coaching et accompagnement personnalis\u00e9 pour atteindre vos objectifs personnels et professionnels.",
+      "Love coaching, job coaching et accompagnement personnalisé pour atteindre vos objectifs personnels et professionnels.",
   },
   {
     icon: Hand,
     title: "EFT",
     description:
-      "Technique de lib\u00e9ration \u00e9motionnelle par tapotage pour soulager stress, anxi\u00e9t\u00e9 et \u00e9motions bloquantes.",
+      "Technique de libération émotionnelle par tapotage pour soulager stress, anxiété et émotions bloquantes.",
   },
 ];
 
@@ -47,9 +47,9 @@ export default function ServicesSection() {
       <div className="max-w-[1200px] mx-auto px-6">
         <ScrollReveal>
           <SectionHeader
-            label="Mes sp\u00e9cialit\u00e9s"
+            label="Mes spécialités"
             title="Services de psychologie"
-            subtitle="De la th\u00e9rapie br\u00e8ve aux approches compl\u00e9mentaires, chaque parcours est unique"
+            subtitle="De la thérapie brève aux approches complémentaires, chaque parcours est unique"
           />
         </ScrollReveal>
 
