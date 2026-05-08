@@ -36,7 +36,7 @@ export default function HeroSection() {
           "radial-gradient(ellipse 85% 65% at 100% 0%, rgba(64, 145, 108, 0.14) 0%, #f6faf8 55%), radial-gradient(ellipse 50% 40% at 0% 100%, rgba(27, 67, 50, 0.06) 0%, transparent 55%)",
       }}
     >
-      <div className="max-w-[1200px] mx-auto px-6 h-full flex items-center pt-[72px]">
+      <div className="max-w-[1200px] mx-auto px-6 h-full flex items-center pt-[calc(72px+1.25rem)] lg:pt-[calc(72px+2rem)]">
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,max-content)_auto] gap-8 lg:gap-6 xl:gap-10 items-center w-full py-16 lg:py-0 lg:justify-items-start">
           {/* Left: Text — largeur au contenu pour éviter un vide entre texte et photo */}
           <div className="order-2 lg:order-1 w-full max-w-[560px] lg:max-w-[min(36rem,100%)] lg:w-max">
