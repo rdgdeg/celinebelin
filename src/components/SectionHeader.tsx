@@ -1,9 +1,12 @@
+import { cn } from "@/lib/utils";
+
 interface SectionHeaderProps {
   label: string;
   title: string;
   subtitle?: string;
   light?: boolean;
   align?: "center" | "left";
+  className?: string;
 }
 
 export default function SectionHeader({
@@ -12,9 +15,16 @@ export default function SectionHeader({
   subtitle,
   light = false,
   align = "center",
+  className,
 }: SectionHeaderProps) {
   return (
-    <div className={`${align === "center" ? "text-center" : "text-left"} mb-12`}>
+    <div
+      className={cn(
+        align === "center" ? "text-center" : "text-left",
+        "mb-12",
+        className
+      )}
+    >
       <span
         className={`inline-block px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-[0.1em] mb-4 ${
           light

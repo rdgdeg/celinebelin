@@ -21,20 +21,24 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24 bg-cream-alt">
       <div className="max-w-[1200px] mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left: Form */}
-          <div>
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-stretch">
+          {/* Left: Form — même hauteur que la carte droite */}
+          <div className="flex min-h-0 flex-col lg:h-full">
             <ScrollReveal>
               <SectionHeader
                 label="Me contacter"
                 title="Prenons contact"
                 align="left"
+                className="mb-8 lg:mb-10"
               />
             </ScrollReveal>
 
-            <ScrollReveal delay={0.1}>
-              <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-                <div className="grid sm:grid-cols-2 gap-5">
+            <ScrollReveal delay={0.1} className="flex min-h-0 flex-1 flex-col">
+              <form
+                onSubmit={handleSubmit}
+                className="flex min-h-0 flex-1 flex-col gap-5"
+              >
+                <div className="grid shrink-0 gap-5 sm:grid-cols-2">
                   <input
                     type="text"
                     placeholder="Nom *"
@@ -56,7 +60,7 @@ export default function ContactSection() {
                 <select
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  className="w-full px-5 py-3.5 rounded-xl border border-warm-border bg-white text-warm-text focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/20 transition-all appearance-none cursor-pointer"
+                  className="w-full shrink-0 px-5 py-3.5 rounded-xl border border-warm-border bg-white text-warm-text focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/20 transition-all appearance-none cursor-pointer"
                 >
                   <option value="">Sujet de votre message</option>
                   <option value="rdv">Demande de rendez-vous</option>
@@ -67,15 +71,15 @@ export default function ContactSection() {
 
                 <textarea
                   placeholder="Votre message..."
-                  rows={5}
+                  rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-5 py-3.5 rounded-xl border border-warm-border bg-white text-warm-text placeholder:text-warm-text-light focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/20 transition-all resize-none"
+                  className="min-h-[140px] w-full flex-1 resize-none rounded-xl border border-warm-border bg-white px-5 py-3.5 text-warm-text placeholder:text-warm-text-light focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/20 transition-all lg:min-h-[180px]"
                 />
 
                 <button
                   type="submit"
-                  className="self-start inline-flex items-center px-8 py-3.5 bg-forest text-white text-sm font-semibold rounded-full hover:bg-forest-light hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(45,106,79,0.28)] active:bg-forest-dark active:translate-y-0 transition-all duration-300"
+                  className="mt-auto inline-flex shrink-0 items-center self-start px-8 py-3.5 bg-forest text-sm font-semibold text-white rounded-full hover:bg-forest-light hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(45,106,79,0.28)] active:bg-forest-dark active:translate-y-0 transition-all duration-300"
                 >
                   {submitted ? "Message envoyé !" : "Envoyer mon message"}
                 </button>
@@ -84,8 +88,8 @@ export default function ContactSection() {
           </div>
 
           {/* Right: Info */}
-          <ScrollReveal direction="right" delay={0.2}>
-            <div className="bg-white rounded-2xl p-8 lg:p-10 border border-warm-border/60 shadow-[0_6px_28px_rgba(27,67,50,0.07)]">
+          <ScrollReveal direction="right" delay={0.2} className="flex min-h-0 lg:h-full">
+            <div className="flex h-full min-h-[280px] w-full flex-col rounded-2xl border border-warm-border/60 bg-white p-8 shadow-[0_6px_28px_rgba(27,67,50,0.07)] lg:min-h-0 lg:p-10">
               <div className="flex flex-col gap-8">
                 <div className="flex items-start gap-4">
                   <div className="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center shrink-0">
