@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import HeroSection from "@/sections/HeroSection";
+import BlogSection from "@/sections/BlogSection";
 import AboutSection from "@/sections/AboutSection";
 import ServicesSection from "@/sections/ServicesSection";
 import MotifsSection from "@/sections/MotifsSection";
@@ -14,6 +15,7 @@ export default function App() {
       <Navigation />
       <main>
         <HeroSection />
+        <BlogSection />
         <AboutSection />
         <ServicesSection />
         <MotifsSection />

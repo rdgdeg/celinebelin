@@ -63,6 +63,19 @@ module.exports = {
           DEFAULT: "#74c69d",
           muted: "rgba(45, 106, 79, 0.12)",
         },
+        mint: {
+          DEFAULT: "#d8f3dc",
+          soft: "#e8f5e9",
+        },
+        fern: {
+          DEFAULT: "#52b788",
+          dark: "#2d6a4f",
+        },
+        jade: {
+          DEFAULT: "#40916c",
+          light: "#95d5b2",
+        },
+        pine: "#1a3c34",
         cream: {
           DEFAULT: "#f6faf8",
           alt: "#ecf4ef",
@@ -101,11 +114,28 @@ module.exports = {
           "0%,70%,100%": { opacity: "1" },
           "20%,50%": { opacity: "0" },
         },
+        "hero-blob": {
+          "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+          "50%": { transform: "translate(18px, -14px) scale(1.06)" },
+        },
+        "hero-fade": {
+          "0%": { opacity: "0.4" },
+          "50%": { opacity: "0.75" },
+          "100%": { opacity: "0.4" },
+        },
+        "hero-line": {
+          "0%": { transform: "scaleX(0)", opacity: "0.6" },
+          "100%": { transform: "scaleX(1)", opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "caret-blink": "caret-blink 1.25s ease-out infinite",
+        "hero-blob": "hero-blob 14s ease-in-out infinite",
+        "hero-blob-slow": "hero-blob 22s ease-in-out infinite reverse",
+        "hero-fade": "hero-fade 8s ease-in-out infinite",
+        "hero-line": "hero-line 1.2s ease-out forwards",
       },
     },
   },
