@@ -1,29 +1,21 @@
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import HeroSection from "@/sections/HeroSection";
-import BlogSection from "@/sections/BlogSection";
-import AboutSection from "@/sections/AboutSection";
-import ServicesSection from "@/sections/ServicesSection";
-import MotifsSection from "@/sections/MotifsSection";
-import AnimalsSection from "@/sections/AnimalsSection";
-import TarifsSection from "@/sections/TarifsSection";
-import ContactSection from "@/sections/ContactSection";
+import { Routes, Route } from "react-router";
+import Landing from "@/pages/Landing";
+import BlogArticlePage from "@/pages/BlogArticlePage";
+import MentionsLegales from "@/pages/MentionsLegales";
+import PolitiqueConfidentialite from "@/pages/PolitiqueConfidentialite";
+import ContactPage from "@/pages/ContactPage";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-cream">
-      <Navigation />
-      <main>
-        <HeroSection />
-        <BlogSection />
-        <AboutSection />
-        <ServicesSection />
-        <MotifsSection />
-        <AnimalsSection />
-        <TarifsSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/blog/:slug" element={<BlogArticlePage />} />
+      <Route path="/mentions-legales" element={<MentionsLegales />} />
+      <Route
+        path="/politique-confidentialite"
+        element={<PolitiqueConfidentialite />}
+      />
+    </Routes>
   );
 }

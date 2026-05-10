@@ -45,7 +45,7 @@ export default function MotifsSection() {
   return (
     <section
       id="motifs"
-      className="relative py-24 overflow-hidden bg-gradient-to-br from-forest-dark via-forest to-forest-light"
+      className="relative py-24 overflow-hidden bg-gradient-to-br from-brand-dark via-brand to-brand-light"
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.07]"

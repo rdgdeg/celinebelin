@@ -56,9 +56,9 @@ export default function ServicesSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map(({ icon: Icon, title, description }, i) => (
             <ScrollReveal key={title} delay={i * 0.1}>
-              <div className="group bg-white rounded-2xl p-8 border border-warm-border/80 shadow-[0_6px_28px_rgba(27,67,50,0.07)] hover:border-forest/25 hover:shadow-[0_14px_40px_rgba(27,67,50,0.12)] hover:-translate-y-1 transition-all duration-300 h-full">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-forest/12 to-sage/10 flex items-center justify-center mb-5 group-hover:from-forest/18 group-hover:to-sage/15 transition-colors">
-                  <Icon size={28} className="text-forest" />
+              <div className="group bg-white rounded-2xl p-8 border border-warm-border/80 shadow-card hover:border-brand/25 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 h-full">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand/12 to-lavender/10 flex items-center justify-center mb-5 group-hover:from-brand/18 group-hover:to-lavender/15 transition-colors">
+                  <Icon size={28} className="text-brand" />
                 </div>
                 <h3 className="font-display text-xl font-semibold text-warm-text mb-3">
                   {title}

@@ -50,41 +50,36 @@ module.exports = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        sage: {
-          DEFAULT: "#5c7a66",
-          light: "#7a967f",
+        /** Marque — verts PEPS + pastels (mist / sky / lavender) */
+        brand: {
+          DEFAULT: "#16965c",
+          light: "#22c77a",
+          dark: "#0d4a32",
         },
-        forest: {
-          DEFAULT: "#2d6a4f",
-          light: "#40916c",
-          dark: "#1b4332",
+        /** Accent « frais » (peps) + pastels très doux */
+        sky: {
+          DEFAULT: "#3ecf8f",
+          light: "#c5f0dc",
         },
-        leaf: {
-          DEFAULT: "#74c69d",
-          muted: "rgba(45, 106, 79, 0.12)",
+        mist: {
+          DEFAULT: "#d4f0e3",
+          soft: "#ecf8f1",
         },
-        mint: {
-          DEFAULT: "#d8f3dc",
-          soft: "#e8f5e9",
+        /** Secondaire doux type sauge pastel */
+        lavender: {
+          DEFAULT: "#6fa882",
+          light: "#a8d4b8",
         },
-        fern: {
-          DEFAULT: "#52b788",
-          dark: "#2d6a4f",
-        },
-        jade: {
-          DEFAULT: "#40916c",
-          light: "#95d5b2",
-        },
-        pine: "#1a3c34",
+        ink: "#0f2419",
         cream: {
-          DEFAULT: "#f6faf8",
-          alt: "#ecf4ef",
+          DEFAULT: "#f6fcf9",
+          alt: "#eaf6f0",
         },
         warm: {
-          text: "#1e2d27",
-          "text-secondary": "#4a5c54",
-          "text-light": "#6b7d73",
-          border: "#d4e4dc",
+          text: "#13261c",
+          "text-secondary": "#3d5248",
+          "text-light": "#5c6e62",
+          border: "#c0e0d0",
         },
       },
       fontFamily: {
@@ -100,6 +95,15 @@ module.exports = {
       },
       boxShadow: {
         xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        card: "0 6px 28px rgba(13, 74, 50, 0.07)",
+        "card-hover": "0 14px 40px rgba(13, 74, 50, 0.12)",
+        nav: "0 2px 20px rgba(13, 74, 50, 0.08)",
+        blog: "0 8px 32px rgba(13, 74, 50, 0.08)",
+        "blog-hover": "0 16px 48px rgba(13, 74, 50, 0.14)",
+        cta: "0 4px 22px rgba(22, 199, 122, 0.38)",
+        "hero-frame": "0 28px 60px -12px rgba(13, 74, 50, 0.28)",
+        banner: "0 12px 40px rgba(13, 74, 50, 0.2)",
+        animal: "0 4px 18px rgba(13, 74, 50, 0.06)",
       },
       keyframes: {
         "accordion-down": {

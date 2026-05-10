@@ -1,13 +1,15 @@
+import { Link } from "react-router";
+
 const navLinks = [
-  { label: "Accueil", href: "#accueil" },
-  { label: "À propos", href: "#a-propos" },
-  { label: "Services", href: "#services" },
-  { label: "Motifs", href: "#motifs" },
-  { label: "Blog", href: "#blog" },
-  { label: "Animaux", href: "#animaux" },
-  { label: "Tarifs", href: "#tarifs" },
-  { label: "Contact", href: "#contact" },
-];
+  { label: "Accueil", to: "/#accueil" },
+  { label: "À propos", to: "/#a-propos" },
+  { label: "Services", to: "/#services" },
+  { label: "Motifs", to: "/#motifs" },
+  { label: "Blog", to: "/#blog" },
+  { label: "Animaux", to: "/#animaux" },
+  { label: "Tarifs", to: "/#tarifs" },
+  { label: "Contact", to: "/contact" },
+] as const;
 
 const services = [
   "Psychologie",
@@ -19,17 +21,10 @@ const services = [
 ];
 
 export default function Footer() {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <footer className="bg-forest-dark text-white">
+    <footer className="bg-brand-dark text-white">
       <div className="max-w-[1200px] mx-auto px-6 pt-16 pb-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          {/* Column 1: Logo */}
           <div>
             <h3 className="font-display text-xl font-semibold text-white mb-1">
               Céline Belin
@@ -42,27 +37,24 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Navigation */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">
               Navigation
             </h4>
             <ul className="flex flex-col gap-2.5">
               {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    onClick={(e) => handleClick(e, link.href)}
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
                     className="text-sm text-white/60 hover:text-white transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3: Services */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">
               Services
@@ -76,7 +68,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4">
               Contact
@@ -91,8 +82,19 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-6 text-center">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-white/10 pt-6 text-[13px] text-white/50">
+          <Link to="/mentions-legales" className="hover:text-white transition-colors">
+            Mentions légales
+          </Link>
+          <Link
+            to="/politique-confidentialite"
+            className="hover:text-white transition-colors"
+          >
+            Politique de confidentialité
+          </Link>
+        </div>
+
+        <div className="border-t border-white/10 pt-6 mt-6 text-center">
           <p className="text-[13px] text-white/40">
             &copy; 2026 Céline Belin &mdash; Psychologue &amp; Bien-Être. Tous
             droits réservés.

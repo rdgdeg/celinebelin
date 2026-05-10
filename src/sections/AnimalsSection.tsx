@@ -30,15 +30,13 @@ const animalServices = [
 export default function AnimalsSection() {
   return (
     <section id="animaux" className="relative py-24 bg-cream-alt">
-      {/* Top accent strip */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-forest via-sage to-leaf" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand via-lavender to-sky" />
 
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="grid lg:grid-cols-[55%_45%] gap-12 items-center">
-          {/* Left: Content */}
           <div>
             <ScrollReveal>
-              <span className="inline-block px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-[0.1em] bg-sage/15 text-sage mb-4">
+              <span className="inline-block px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-[0.1em] bg-lavender/15 text-lavender mb-4">
                 Deuxième activité
               </span>
             </ScrollReveal>
@@ -50,7 +48,7 @@ export default function AnimalsSection() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.15}>
-              <div className="w-[60px] h-[3px] rounded-full bg-sage mb-6" />
+              <div className="w-[60px] h-[3px] rounded-full bg-lavender mb-6" />
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
@@ -65,7 +63,7 @@ export default function AnimalsSection() {
             <div className="flex flex-col gap-4">
               {animalServices.map(({ title, description }, i) => (
                 <ScrollReveal key={title} delay={0.25 + i * 0.08}>
-                  <div className="flex gap-4 p-4 bg-white rounded-xl border border-warm-border/70 shadow-[0_4px_18px_rgba(27,67,50,0.06)] hover:border-sage/40 transition-colors">
+                  <div className="flex gap-4 p-4 bg-white rounded-xl border border-warm-border/70 shadow-animal hover:border-lavender/40 transition-colors">
                     <span className="text-lg shrink-0">🐾</span>
                     <div>
                       <h4 className="font-semibold text-warm-text text-sm mb-1">
@@ -79,7 +77,6 @@ export default function AnimalsSection() {
             </div>
           </div>
 
-          {/* Right: Image */}
           <ScrollReveal direction="right" distance={30}>
             <img
               src="/images/animals.jpg"

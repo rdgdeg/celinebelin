@@ -74,7 +74,14 @@ export default function HeroSection() {
         tl.fromTo(
           citiesRef.current.children,
           { opacity: 0, y: 14, scale: 0.97 },
-          { opacity: 1, y: 0, scale: 1, stagger: 0.07, duration: 0.42, ease: "back.out(1.2)" },
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            stagger: 0.07,
+            duration: 0.42,
+            ease: "back.out(1.2)",
+          },
           "-=0.28"
         );
       }
@@ -99,37 +106,32 @@ export default function HeroSection() {
     <section
       id="accueil"
       ref={sectionRef}
-      className="relative min-h-screen max-h-[920px] overflow-hidden bg-gradient-to-br from-cream via-mint-soft to-mint/40"
+      className="relative min-h-screen max-h-[920px] overflow-hidden bg-gradient-to-br from-cream via-mist-soft to-mist/50"
     >
-      {/* Fonds verts animés */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        aria-hidden
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_60%_at_100%_-10%,rgba(82,183,136,0.22),transparent_55%),radial-gradient(ellipse_70%_50%_at_0%_100%,rgba(45,106,79,0.12),transparent_50%),linear-gradient(180deg,rgba(232,245,233,0.9)_0%,rgba(246,250,248,0.3)_45%,transparent_100%)]" />
-        <div className="absolute -right-20 top-24 h-80 w-80 rounded-full bg-gradient-to-bl from-fern/35 via-leaf/30 to-jade-light/25 blur-3xl animate-hero-blob motion-reduce:animate-none" />
-        <div className="absolute -left-16 bottom-32 h-72 w-72 rounded-full bg-gradient-to-tr from-forest/20 via-sage/25 to-mint/50 blur-3xl animate-hero-blob-slow motion-reduce:animate-none" />
-        <div className="absolute left-1/3 top-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-jade/10 blur-3xl animate-hero-fade motion-reduce:animate-none" />
+      <div className="pointer-events-none absolute inset-0" aria-hidden>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_60%_at_100%_-10%,rgba(62,207,143,0.32),transparent_55%),radial-gradient(ellipse_70%_50%_at_0%_100%,rgba(22,150,92,0.14),transparent_50%),linear-gradient(180deg,rgba(236,248,241,0.96)_0%,rgba(246,252,249,0.4)_45%,transparent_100%)]" />
+        <div className="absolute -right-20 top-24 h-80 w-80 rounded-full bg-gradient-to-bl from-sky/40 via-sky-light/35 to-brand-light/25 blur-3xl animate-hero-blob motion-reduce:animate-none" />
+        <div className="absolute -left-16 bottom-32 h-72 w-72 rounded-full bg-gradient-to-tr from-brand/18 via-lavender/20 to-mist/60 blur-3xl animate-hero-blob-slow motion-reduce:animate-none" />
+        <div className="absolute left-1/3 top-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-brand-light/12 blur-3xl animate-hero-fade motion-reduce:animate-none" />
       </div>
 
       <div className="relative z-10 mx-auto flex h-full max-w-[1200px] items-center px-6 pt-[calc(72px+1.25rem)] lg:pt-[calc(72px+2rem)]">
         <div className="grid w-full grid-cols-1 items-center gap-10 py-14 lg:grid-cols-12 lg:gap-8 lg:py-6 xl:gap-12">
-          {/* Texte */}
           <div className="order-2 flex w-full flex-col lg:order-1 lg:col-span-6 lg:max-w-xl xl:max-w-[28rem]">
             <span
               ref={labelRef}
-              className="mb-4 inline-block origin-left rounded-full border border-forest/15 bg-white/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-forest-dark shadow-sm backdrop-blur-sm opacity-0"
+              className="mb-4 inline-block origin-left rounded-full border border-brand/15 bg-white/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-brand-dark shadow-sm backdrop-blur-sm opacity-0"
             >
               Psychologue agréée · Coach de vie
             </span>
 
             <h1
               ref={titleRef}
-              className="mb-5 font-display text-4xl font-bold leading-[1.08] text-pine opacity-0 md:text-5xl lg:text-[3.35rem]"
+              className="mb-5 font-display text-4xl font-bold leading-[1.08] text-ink opacity-0 md:text-5xl lg:text-[3.35rem]"
             >
               Votre bien-être,
               <br />
-              <span className="bg-gradient-to-r from-forest via-jade to-fern bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand via-brand-light to-sky bg-clip-text text-transparent">
                 ma mission
               </span>
             </h1>
@@ -138,31 +140,31 @@ export default function HeroSection() {
               ref={introRef}
               className="mb-8 max-w-[540px] space-y-3 opacity-0"
             >
-              <p className="border-l-[3px] border-fern pl-4 text-base leading-relaxed text-warm-text-secondary">
+              <p className="border-l-[3px] border-sky pl-4 text-base leading-relaxed text-warm-text-secondary">
                 Psychologue agréée à Silly, Mons, Péruwelz &amp; Bernissart.
                 J&apos;accompagne adolescents et adultes vers un mieux-être
                 durable à travers une approche personnalisée et bienveillante.
               </p>
               <p className="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-sm text-warm-text-secondary">
-                <span className="rounded-md bg-forest/10 px-2 py-0.5 font-medium text-forest">
+                <span className="rounded-md bg-brand/10 px-2 py-0.5 font-medium text-brand">
                   Psychothérapie
                 </span>
-                <span className="text-jade" aria-hidden>
+                <span className="text-brand-light" aria-hidden>
                   ·
                 </span>
-                <span className="rounded-md bg-jade/12 px-2 py-0.5 font-medium text-forest-dark">
+                <span className="rounded-md bg-brand-light/15 px-2 py-0.5 font-medium text-brand-dark">
                   Hypnose &amp; EMDR
                 </span>
-                <span className="text-jade" aria-hidden>
+                <span className="text-brand-light" aria-hidden>
                   ·
                 </span>
-                <span className="rounded-md bg-sage/15 px-2 py-0.5 font-medium text-sage">
+                <span className="rounded-md bg-lavender/15 px-2 py-0.5 font-medium text-lavender">
                   Coaching
                 </span>
-                <span className="text-jade" aria-hidden>
+                <span className="text-brand-light" aria-hidden>
                   ·
                 </span>
-                <span className="rounded-md bg-mint/80 px-2 py-0.5 font-medium text-forest">
+                <span className="rounded-md bg-mist/90 px-2 py-0.5 font-medium text-brand">
                   Soins animaux
                 </span>
               </p>
@@ -179,7 +181,7 @@ export default function HeroSection() {
               >
                 Prendre rendez-vous
               </Button>
-              <Button variant="secondary" href="#services">
+              <Button variant="secondary" href="/#services">
                 Découvrir mes services
               </Button>
             </div>
@@ -188,7 +190,7 @@ export default function HeroSection() {
               {cities.map((city) => (
                 <span
                   key={city}
-                  className="rounded-full border border-jade/25 bg-white/80 px-4 py-2 text-sm text-warm-text-secondary shadow-xs backdrop-blur-sm transition-transform duration-300 hover:-translate-y-0.5 hover:border-forest/30 hover:text-forest motion-reduce:transition-none"
+                  className="rounded-full border border-brand-light/30 bg-white/80 px-4 py-2 text-sm text-warm-text-secondary shadow-xs backdrop-blur-sm transition-transform duration-300 hover:-translate-y-0.5 hover:border-brand/35 hover:text-brand motion-reduce:transition-none"
                 >
                   {city}
                 </span>
@@ -196,18 +198,17 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Photo */}
           <div className="order-1 flex justify-center lg:order-2 lg:col-span-6 lg:justify-end">
             <div
               ref={frameRef}
               className="relative w-full max-w-[340px] opacity-0 sm:max-w-[380px] lg:max-w-[400px]"
             >
               <div
-                className="absolute -inset-1 rounded-[1.35rem] bg-gradient-to-br from-fern via-forest to-jade opacity-90 blur-[2px] motion-reduce:opacity-0"
+                className="absolute -inset-1 rounded-[1.35rem] bg-gradient-to-br from-sky via-brand to-brand-light opacity-90 blur-[2px] motion-reduce:opacity-0"
                 aria-hidden
               />
-              <div className="relative rounded-2xl bg-gradient-to-br from-white via-mint-soft to-mint/60 p-[3px] shadow-[0_28px_60px_-12px_rgba(27,67,50,0.35)] ring-1 ring-forest/10">
-                <div className="overflow-hidden rounded-[0.9rem] bg-pine/10">
+              <div className="relative rounded-2xl bg-gradient-to-br from-white via-mist-soft to-mist/70 p-[3px] shadow-hero-frame ring-1 ring-brand/10">
+                <div className="overflow-hidden rounded-[0.9rem] bg-ink/10">
                   <img
                     ref={imageRef}
                     src="/images/hero.jpg"

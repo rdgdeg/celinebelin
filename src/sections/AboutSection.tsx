@@ -16,10 +16,9 @@ export default function AboutSection() {
     <section id="a-propos" className="py-24 bg-cream-alt">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="grid lg:grid-cols-[45%_55%] gap-12 items-center">
-          {/* Left: Image */}
           <ScrollReveal direction="left" distance={30}>
             <div className="relative">
-              <div className="absolute -top-5 -left-5 w-20 h-20 rounded-full bg-forest/15 -z-10" />
+              <div className="absolute -top-5 -left-5 w-20 h-20 rounded-full bg-brand/12 -z-10" />
               <img
                 src="/images/about.jpg"
                 alt="Céline Belin en consultation"
@@ -29,7 +28,6 @@ export default function AboutSection() {
             </div>
           </ScrollReveal>
 
-          {/* Right: Content */}
           <div>
             <ScrollReveal>
               <SectionHeader
@@ -72,8 +70,8 @@ export default function AboutSection() {
                     key={text}
                     className="flex items-center gap-3 p-3 bg-white/80 border border-warm-border/60 rounded-xl shadow-sm"
                   >
-                    <div className="w-10 h-10 rounded-full bg-forest/10 flex items-center justify-center shrink-0">
-                      <Icon size={18} className="text-forest" />
+                    <div className="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center shrink-0">
+                      <Icon size={18} className="text-brand" />
                     </div>
                     <span className="text-sm font-medium text-warm-text">{text}</span>
                   </div>
